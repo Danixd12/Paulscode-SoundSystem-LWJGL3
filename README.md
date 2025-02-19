@@ -1,7 +1,7 @@
 Paulscode-SoundSystem
 =====================
 
-Paulscode's 3D Sound System.
+Paulscode's 3D Sound System. Port to LWJGL3 by [ElkCloner](https://jvm-gaming.org/t/paulscode-soundsystem-for-lwjgl-3/70494/10)
 
 
 Downloads:
