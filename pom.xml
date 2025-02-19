@@ -25,10 +25,10 @@
     </scm>
 
     <properties>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
         <lwjgl.version>3.3.6</lwjgl.version>
-        <mavencompiler.version>2.5.1</mavencompiler.version>
-        <mavenjavadoc.version>2.10.1</mavenjavadoc.version>
+        <mavencompiler.version>3.10.0</mavencompiler.version>
+        <mavenjavadoc.version>3.3.1</mavenjavadoc.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,12 +36,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.lwjgl.lwjgl</groupId>
+            <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
             <version>${lwjgl.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.lwjgl.lwjgl</groupId>
+            <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl-openal</artifactId>
             <version>${lwjgl.version}</version>
         </dependency>

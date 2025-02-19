@@ -274,12 +274,12 @@ public class LibraryLWJGLOpenAL extends Library {
         // Let user know what caused the above error messages:
         if (errors) {
             importantMessage("OpenAL did not initialize properly!");
-            throw new LibraryLWJGLOpenAL.Exception("Problem encountered " +
+            throw new Exception("Problem encountered " +
                     "while loading OpenAL or " +
                     "creating the listener.  " +
                     "Probable cause:  OpenAL not " +
                     "supported",
-                    LibraryLWJGLOpenAL.Exception.CREATE);
+                    Exception.CREATE);
         }
 
         super.init();
@@ -292,22 +292,22 @@ public class LibraryLWJGLOpenAL extends Library {
                     AL10.AL_PITCH, 1.0f);
             if (checkALError()) {
                 alPitchSupported(SET, false);
-                throw new LibraryLWJGLOpenAL.Exception("OpenAL: AL_PITCH not " +
-                        "supported.", LibraryLWJGLOpenAL.Exception.NO_AL_PITCH);
+                throw new Exception("OpenAL: AL_PITCH not " +
+                        "supported.", Exception.NO_AL_PITCH);
             } else {
                 alPitchSupported(SET, true);
             }
         } catch (java.lang.Exception e) {
             alPitchSupported(SET, false);
-            throw new LibraryLWJGLOpenAL.Exception("OpenAL: AL_PITCH not " +
-                    "supported.", LibraryLWJGLOpenAL.Exception.NO_AL_PITCH);
+            throw new Exception("OpenAL: AL_PITCH not " +
+                    "supported.", Exception.NO_AL_PITCH);
         }
     }
 
     /**
      * Creates a new channel of the specified type (normal or streaming).  Possible
      * values for channel type can be found in the
-     * {@link paulscode.sound.SoundSystemConfig SoundSystemConfig} class.
+     * {@link SoundSystemConfig SoundSystemConfig} class.
      *
      * @param type Type of channel.
      */
