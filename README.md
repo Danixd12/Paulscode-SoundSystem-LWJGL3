@@ -81,7 +81,7 @@ Maven:
 ```xml
 <repositories>
   <repository>
-	  <id>jitpack.io</id>
+	<id>jitpack.io</id>
   	<url>https://jitpack.io</url>
   </repository>
 </repositories>
@@ -97,10 +97,10 @@ Gradle groovy:
 
 ```groovy
 dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-		mavenCentral()
-	  maven { url 'https://jitpack.io' }
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
   }
 }
 
