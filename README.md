@@ -3,7 +3,6 @@ Paulscode-SoundSystem
 
 Paulscode's 3D Sound System. Port to LWJGL3 by [ElkCloner](https://jvm-gaming.org/t/paulscode-soundsystem-for-lwjgl-3/70494/10)
 
-
 Downloads:
 
 Sound System  Version date:  January 7, 2012  
@@ -74,3 +73,40 @@ What's new?
 - Fixed raw data stream millisecond position bug in LibraryLWJGLOpenAL and LibraryJOAL
 
 « Last Edit: April 18, 2013, 01:44:09 AM by Paul »
+
+=====================
+
+Maven:
+
+```xml
+<repositories>
+  <repository>
+	  <id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependency>
+  <groupId>com.github.Danixd12</groupId>
+	<artifactId>Paulscode-SoundSystem-LWJGL3</artifactId>
+	<version>master-SNAPSHOT</version>
+</dependency>
+```
+
+Gradle groovy:
+
+```groovy
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+		mavenCentral()
+	  maven { url 'https://jitpack.io' }
+  }
+}
+
+dependencies {
+  implementation 'com.github.Danixd12:Paulscode-SoundSystem-LWJGL3:master-SNAPSHOT'
+}
+```
+
+For other build tools visit [this link](https://jitpack.io/#Danixd12/Paulscode-SoundSystem-LWJGL3/master-SNAPSHOT)
